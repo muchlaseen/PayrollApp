@@ -29,7 +29,7 @@ public class PayrollView extends JFrame {
     private JLabel takeHomePayLabel;
     private JTextField txtId;
     private JTextField txtName;
-    private JTextField txtDept;
+    private JComboBox <String> combDept;
     private JTextField txtBaseSalary;
     private JTextField txtLifeInsurance;
     private JTextField txtTakeHomePay;
@@ -55,8 +55,9 @@ public class PayrollView extends JFrame {
         
         // Init TextField Component
         txtId = new JTextField();
-        txtName = new JTextField();
-        txtDept = new JTextField();
+        txtName = new JTextField(); 
+        String[] deptList = new String[] {"Direktur", "Manager", "Staff"};
+        combDept = new JComboBox<>(deptList);
         txtBaseSalary = new JTextField();
         txtLifeInsurance = new JTextField();
         txtTakeHomePay = new JTextField();
@@ -93,7 +94,7 @@ public class PayrollView extends JFrame {
         // TextField's Properties
         txtId.setBounds(100, 70, 150, 22);
         txtName.setBounds(100, 100, 210, 22);
-        txtDept.setBounds(100, 130, 210, 22);
+        combDept.setBounds(100, 130, 210, 22);
         txtBaseSalary.setBounds(490, 70, 180, 22);
         txtLifeInsurance.setBounds(490, 100, 180, 22);
         txtTakeHomePay.setBounds(490, 130, 180, 22);
@@ -118,7 +119,7 @@ public class PayrollView extends JFrame {
         mainPanel.add(deptLabel);
         mainPanel.add(txtId);
         mainPanel.add(txtName);
-        mainPanel.add(txtDept);
+        mainPanel.add(combDept);
         mainPanel.add(baseSalaryLabel);
         mainPanel.add(lifeInsuranceLabel);
         mainPanel.add(takeHomePayLabel);
