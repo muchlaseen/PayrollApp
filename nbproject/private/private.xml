@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/muchlas/NetBeansProjects/PayrollApp/src/app/payroll/controller/EmployeeController.java</file>
-            <file>file:/home/muchlas/NetBeansProjects/PayrollApp/src/app/payroll/view/PayrollApp.java</file>
-            <file>file:/home/muchlas/NetBeansProjects/PayrollApp/src/app/payroll/view/PayrollView.java</file>
-            <file>file:/home/muchlas/NetBeansProjects/PayrollApp/src/app/payroll/model/EmployeeModel.java</file>
-            <file>file:/home/muchlas/NetBeansProjects/PayrollApp/src/app/payroll/model/PayrollModel.java</file>
+            <file>file:/home/muchlas/oop-project/PayrollApp/src/app/payroll/model/PayrollModel.java</file>
+            <file>file:/home/muchlas/oop-project/PayrollApp/src/app/payroll/model/EmployeeModel.java</file>
+            <file>file:/home/muchlas/oop-project/PayrollApp/src/app/payroll/view/PayrollView.java</file>
+            <file>file:/home/muchlas/oop-project/PayrollApp/src/app/payroll/controller/PayrollController.java</file>
         </group>
     </open-files>
 </project-private>
