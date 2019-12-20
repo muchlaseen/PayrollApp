@@ -11,21 +11,51 @@ package app.payroll.model;
  */
 public class PayrollModel {
     private EmployeeModel _empModel;
-    private double baseSalary = 2000000;
     private double lifeInsurance = 0.2;
+    private double baseSalary;
     private double jobSubsidy;
     private double salaryCalculation;
-    
-    public PayrollModel(EmployeeModel empModel) {
-        this._empModel = empModel;
+
+    public EmployeeModel getEmpModel() {
+        return _empModel;
     }
-    
-    public void loadSalary() {
-       salaryCalculation = ((baseSalary + jobSubsidy) * lifeInsurance);
+
+    public void setEmpModel(EmployeeModel _empModel) {
+        this._empModel = _empModel;
     }
-    
+
+    public double getLifeInsurance() {
+        return lifeInsurance;
+    }
+
+    public void setLifeInsurance(double baseSalary) {
+        lifeInsurance = baseSalary * 0.2;
+    }
+
+    public double getBaseSalary() {
+        return baseSalary;
+    }
+
+    public void setBaseSalary(double baseSalary) {
+        this.baseSalary = baseSalary;
+    }
+
+//    public double getJobSubsidy() {
+//        return jobSubsidy;
+//    }
+//
+//    public void setJobSubsidy(double jobSubsidy) {
+//        this.jobSubsidy = jobSubsidy;
+//    }
+
     public double getSalaryCalculation() {
         return salaryCalculation;
     }
+
+    public void setSalaryCalculation(double baseSalary, double lifeInsurance) {
+        salaryCalculation = baseSalary - lifeInsurance;
+    }
+    
+    
     
 }
