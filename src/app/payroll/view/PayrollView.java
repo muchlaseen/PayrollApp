@@ -28,7 +28,7 @@ public class PayrollView extends JFrame {
     public PayrollView() {
         JPanel mainPanel = new JPanel();
         
-        baseSalarField = new JTextField(_empModel.loadSalary());
+
         
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(700, 400);
